@@ -1,0 +1,7 @@
+{
+  "appId": "com.catsonline.game",
+  "appName": "CATS ONLINE",
+  "webDir": "www",
+  "backgroundColor": "#fff3d6",
+  "server": { "androidScheme": "https" }
+}

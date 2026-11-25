@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>CATS ONLINE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game"></div>
+  <div id="controls">
+    <div class="pad">
+      <button id="btn-left" aria-label="Kiri">◀</button>
+      <button id="btn-right" aria-label="Kanan">▶</button>
+    </div>
+    <button id="btn-switch" aria-label="Ganti kucing">🐾 Ganti</button>
+    <button id="btn-jump" aria-label="Lompat">▲</button>
+  </div>
+  <!-- Library disalin dari node_modules oleh "npm run prepare-web" -->
+  <script src="js/lib/phaser.min.js"></script>
+  <script src="js/lib/supabase.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/net.js"></script>
+  <script src="js/controls.js"></script>
+  <script src="js/GameScene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

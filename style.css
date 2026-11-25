@@ -1,0 +1,14 @@
+html, body { margin: 0; height: 100%; background: #fff3d6; overflow: hidden;
+  touch-action: none; user-select: none; -webkit-user-select: none; -webkit-tap-highlight-color: transparent; }
+#game { position: fixed; inset: 0; }
+#game canvas { display: block; }
+#controls { position: fixed; inset: auto 0 0 0; padding: 0 16px calc(14px + env(safe-area-inset-bottom, 0px));
+  display: flex; justify-content: space-between; align-items: flex-end; pointer-events: none; }
+#controls button { pointer-events: auto; border: 3px solid #e8782a; background: rgba(255,179,120,.85); color: #7a3b10;
+  font-size: 30px; font-weight: bold; border-radius: 18px; width: 78px; height: 78px; touch-action: none; }
+#controls button:active, #controls button.down { background: #ff9a3c; color: #fff; }
+.pad { display: flex; gap: 12px; }
+#btn-switch { width: auto !important; height: 48px !important; font-size: 16px !important; padding: 0 14px; margin-bottom: 15px; }
+/* Android: aman untuk notch/kamera depan saat landscape */
+#controls { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+html, body { -webkit-touch-callout: none; overscroll-behavior: none; }
